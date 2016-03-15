@@ -16,6 +16,10 @@ module.exports = {
         filename: 'index_bundle.js'
     },
     
+    devServer: {
+      inline: true  
+    },
+    
     module: {
         loaders: [
             {

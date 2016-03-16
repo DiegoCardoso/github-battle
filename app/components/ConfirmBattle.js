@@ -2,12 +2,14 @@ import React, {PropTypes} from 'react'
 import {Link} from 'react-router';
 import UserDetails from './UserDetails';
 import UserDetailsWrapper from './UserDetailsWrapper';
+import MainContainer from './MainContainer';
+
 
 const ConfirmBattle = (props) => {
     console.log(props.isLoading)
     return props.isLoading
         ? (<p>LOADING...</p>)
-        : (<div className="jumbotron col-sm-12 text-center">
+        : (<MainContainer>
             <h1>Confirm Players</h1>
             <div className='col-sm-8 col-sm-offset-2'>
                 <UserDetailsWrapper
@@ -29,7 +31,7 @@ const ConfirmBattle = (props) => {
                     </Link>
                 </div>
             </div>
-        </div>);
+        </MainContainer>);
 };
 
 ConfirmBattle.propTypes = {

@@ -1,4 +1,5 @@
 import React, {PropTypes} from 'react'
+import MainContainer from './MainContainer';
 
 const Prompt = (props) => {
     return (
@@ -6,7 +7,7 @@ const Prompt = (props) => {
             <h1>
                 {props.header}
             </h1>
-            <div className="col-sm-12">
+            <MainContainer>
                 <form action="" onSubmit={props.onSubmitUser}>
                     <div className="form-group">
                         <input
@@ -24,7 +25,7 @@ const Prompt = (props) => {
                         </button>
                     </div>
                 </form>
-            </div>
+            </MainContainer>
         </div>
     );
 }

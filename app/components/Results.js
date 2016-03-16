@@ -4,10 +4,11 @@ import {Link} from 'react-router';
 import UserDetails from './UserDetails';
 import UserDetailsWrapper from './UserDetailsWrapper';
 import MainContainer from './MainContainer';
+import Loading from './Loading';
 
 const StartOver = () => {
     return (
-        <div className="col-sm-12" style={{"margin-top": 20}}>
+        <div className="col-sm-12" style={{marginTop: 20}}>
             <Link to="/playerOne">
                 <button type="button" className="btn btn-lg btn-danger">
                     Start Over
@@ -24,7 +25,7 @@ const Results = React.createClass({
         
         if (this.props.isLoading) {
             return (
-                <p>LOADING...</p>
+                <Loading />
             )
         }
         

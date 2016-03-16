@@ -24,6 +24,7 @@ export default React.createClass({
             })
         })
     },
+        
     handleInitiateBattle() {
         this.context.router.push({
             pathname: '/results',
